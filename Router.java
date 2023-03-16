@@ -34,11 +34,20 @@ public class Router {
       InterfaceUtil.printInfo(this.menuInfo);
     }
 
-    // Display menu options
-    String table = String.format("                             AVG:    %-10.2f %-10s",
-          Courses.getWeightedQPI(), Courses.getWeightedLetterGrade());
+    
+
+    // Get total units
+    int totalUnits = 0;
+    for (Course course : Courses.getCourses()) {
+      totalUnits += course.getUnits();
+    }
+
+    // Display results
+    String table = String.format("                               AVG:  %-10s %-10.2f %-10s",
+          totalUnits, Courses.getWeightedQPI(), Courses.getWeightedLetterGrade());
     System.out.println(table);
 
+    // Display menu options
     InterfaceUtil.printMenu(this.menuOptions);
 
     // Ask user to be routed

@@ -1,7 +1,8 @@
 /**
- * Go Payroll
+ * AdDU Grade Calculator
  * 
-
+ * This is the main class of the program. It is responsible for loading the data
+ * from the CSV file and initializing the main menu of the program.
  * 
  * @author  Thony Danielle Labrador
  *          Jemriz Advincula
@@ -13,7 +14,7 @@ public class AdDUGradeCalculator {
     public static void main(String[] args) {
         System.out.println("Loading data...");
         loadData();
-        UserInterface.start();
+        GradesSummary.openMenu();
     }
 
     public static void loadData() {

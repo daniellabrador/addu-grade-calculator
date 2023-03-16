@@ -1,7 +1,7 @@
 /**
- * Payroll Calculations
+ * Grade Calculations
  * 
- * This file contains the methods for calculating the payroll of an employee.
+ * This file contains the methods for calculating the grades of the user.
 */
 
 public class GradeCalculations {

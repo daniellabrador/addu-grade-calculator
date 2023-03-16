@@ -1,31 +1,43 @@
-# Go Payroll
+# AdDU Student Grade Calculator
 
-Go Payroll is a terminal-based payroll management system, created as a project for CS 1233 class at the Ateneo de Davao University.
+This is a command-line program that allows users to calculate their grades based on their AdDU courses. 
 
 ## Features
 
-- Employees Menu - View and/or edit the details of the employees in the system.
-- Generate Payroll - Generate payroll for all employees in the system.
+- Import course data from a CSV file
+- Calculate the average grade for each course
+- Convert average grades to equivalent letter grades
+- Export calculated grades to a CSV file
 
 ## Getting Started
 
-To run the Payroll System application, you can follow these steps:
-
-1. Clone the repository.
-2. Compile the main Java file using `javac GoPayroll.java`.
-3. Run the application using `java GoPayroll`.
+1. Clone this repository to your local machine.
+2. Install Java if it is not already installed on your machine.
+3. Open a terminal window and navigate to the project directory.
+4. Run the command `java Main` to start the program.
 
 ## Usage
 
-Upon running the application, you will be presented with a menu where you can select which feature to use.
+Upon launching the program, you will be presented with a menu of options. Select the desired option by typing in the corresponding number and pressing enter.
 
-- Employees Menu - This will display a table showing the details of all the employees in the system. You can select an employee to view and/or edit their details.
-- Generate Payroll - This will generate payroll for all employees in the system.
+### Calculating Grades
+
+Your data will be calculated every time you add one entry. The program will display the average grade for each course and its equivalent letter grade.
+
+### Exporting Grades
+
+The app will automatically export the data. Just look for `data.csv` file.
 
 ## Contributing
 
-This project is licensed under the MIT License. Feel free to contribute by submitting pull requests or opening issues on the repository.
+If you would like to contribute to this project, please follow these steps:
+
+1. Fork this repository.
+2. Create a new branch with your feature or bug fix.
+3. Make changes and commit them to your branch.
+4. Push your changes to your fork.
+5. Submit a pull request to this repository with a detailed description of your changes.
 
 ## License
 
-Go Payroll is released under the MIT License. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
