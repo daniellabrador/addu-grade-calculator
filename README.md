@@ -14,8 +14,7 @@ This is a command-line program that allows users to calculate their grades based
 1. Clone this repository to your local machine.
 2. Install Java if it is not already installed on your machine.
 3. Open a terminal window and navigate to the project directory.
-4. Compile the java files by running `javac AdDUGradeCalculator.java`.
-5. Run the command `java AdDUGradeCalculator` to start the program.
+4. Run the command `java Main` to start the program.
 
 ## Usage
 
@@ -41,4 +40,4 @@ If you would like to contribute to this project, please follow these steps:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
