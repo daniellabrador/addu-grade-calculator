@@ -43,7 +43,7 @@ public class Router {
     }
 
     // Display results
-    String table = String.format("                               AVG:  %-10s %-10.2f %-10s",
+    String table = String.format("                                              AVG:  %-10s %-10.2f %-10s",
           totalUnits, Courses.getWeightedQPI(), Courses.getWeightedLetterGrade());
     System.out.println(table);
 

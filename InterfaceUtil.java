@@ -7,7 +7,7 @@
 public class InterfaceUtil {
   public static void printHeader(String title) {
     StringBuilder s = new StringBuilder();
-    s.append("\n=======================================================\n"); 
+    s.append("\n================================================================================\n");
 
     int titleLength = title.length();
     int titlePadding = (s.length() - titleLength) / 2;
@@ -24,7 +24,7 @@ public class InterfaceUtil {
     }
 
     printNewLines(40);
-    s.append("\n======================================================="); 
+    s.append("\n================================================================================"); 
 
     System.out.println("\n");
     System.out.println(s);

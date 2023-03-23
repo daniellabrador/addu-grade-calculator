@@ -21,6 +21,7 @@ public class CSVHandler {
     // Read CSV file and return ArrayList of Employee objects
     public static ArrayList<Course> readCSV(String fileName) {
         ArrayList<Course> courses = new ArrayList<>();
+
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
             String line;
             while ((line = br.readLine()) != null) {
@@ -35,6 +36,7 @@ public class CSVHandler {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        
         return courses;
     }
     

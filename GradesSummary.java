@@ -23,14 +23,14 @@ public class GradesSummary {
   }
 
   public static String getGradesTable() {
-    String table = String.format("%-5s %-30s %-10s %-10s %-10s\n", "ID", "Course Name", "Units", "QPI", "Letter");
+    String table = String.format("%-5s %-45s %-10s %-10s %-10s\n", "ID", "Course Name", "Units", "QPI", "Letter");
     for (Course course : Courses.getCourses()) {
         int id = course.getId();
         String courseName = course.getCourseName();
         double gradePoints = course.getGradePoints();
         String letterGrade = course.computeLetterGrade(gradePoints);
         int units = course.getUnits();
-        table += String.format("%-5s %-30s %-10s %-10.2f %-10s\n", id, courseName, units, gradePoints, letterGrade);
+        table += String.format("%-5s %-45s %-10s %-10.2f %-10s\n", id, courseName, units, gradePoints, letterGrade);
         
     }
 
